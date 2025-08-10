@@ -1,0 +1,15 @@
+<footer>
+  <span class="copyright">
+    {%- if config.extra.footer -%}
+    © 2007 {{ config.extra.author | default(value="Miguel Pimentel")}}. {{ config.extra.footer.info |
+    default(value='Powered by Zola.') | safe }}
+    {%- else -%}
+    © 2007 Miguel Pimentel. Powered by <a href="https://www.getzola.org"><u>Zola</u></a> 
+    {%- endif -%}
+  </span>
+
+  <nav class="navigation-footer">
+      <li><a href="https://github.com/redwood9">GitHub</a></li>
+    </ul>
+  </nav>
+</footer>

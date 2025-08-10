@@ -1,0 +1,15 @@
+name = "运指如飞"
+description = "〠 A minimal Zola theme for building light and SEO-ready blogs."
+license = "MIT"
+homepage = "https://github.com/semanticdata/mabuya"
+min_version = "0.18.0"
+demo = "https://mabuya.vercel.app/"
+
+[author]
+name = "Arvin"
+homepage = "https://github.com/redwood9"
+
+[original]
+author = "Arvin Cheng"
+homepage = "https://www.redwood9.com/"
+repo = "https://github.com/redwood9"

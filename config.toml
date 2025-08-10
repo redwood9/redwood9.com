@@ -1,0 +1,63 @@
+base_url = "https://www.redwood9.com"
+title = "Redwood9 运指如飞"
+description = "A Chinese friendly zola theme. Inspired by lightspeed. 重回 2000 年。"
+default_language = "zh-cn"
+compile_sass = true
+generate_feeds = true
+# feed_filenames = ["rss.xml"]
+feed_filenames = ["rss.xml", "atom.xml"]
+author = "redwood9"
+
+# If used as theme, please uncomment this option
+theme = "re137"
+#theme = "zola-pickles"
+
+# To enable categories page
+taxonomies = [{ name = "categories" }]
+
+[slugify]
+paths = "safe"
+taxonomies = "safe"
+anchors = "safe"
+
+[extra]
+# Image shown when you share this website to others
+# ogimage = " "
+
+# SEO settings
+# seo = true
+# google_search_console = " "
+
+# Set up Indiewebring
+indiewebring = true
+
+# Set up Fediring
+fediring = true
+
+# For authentication in mastodon
+mastodon = "https://o3o.ca/@tinikov"
+show_mastodon_icon = false
+
+# Only user name is needed
+github = "redwood9"
+show_github_icon = true
+
+# Show establish date in the footer
+establishdate = "2016"
+
+# license
+license = false
+# license_type = "CC BY-NC 4.0"
+license_type = "CC BY-NC-ND 4.0"
+# license_canonical_url = "https://creativecommons.org/licenses/by-nc/4.0/"
+license_canonical_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+
+# Show "Zola &laquo; re137" in the footer
+show_zola_theme = false
+
+# You can add your own items to list in the site navigator
+re137_menu_links = [
+    { url = "$BASE_URL", name = "Home 主页" },
+    { url = "$BASE_URL/categories", name = "Categories 分类" }, # If enabled "taxonomies"
+    { url = "$BASE_URL/about", name = "About 关于" },
+]

@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>运指如飞</title>
     <subtitle>〠 一个古董程序员的琐碎记事.</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://mabuya.vercel.app/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/"/>
+    <link rel="self" type="application/atom+xml" href="https://www.redwood9.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.redwood9.com/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2025-02-12T00:00:00+00:00</updated>
-    <id>https://mabuya.vercel.app/atom.xml</id>
+    <id>https://www.redwood9.com/atom.xml</id>
     <entry xml:lang="en">
         <title>Getting Started with Rust</title>
         <published>2025-02-12T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/getting-started-with-rust/"/>
-        <id>https://mabuya.vercel.app/getting-started-with-rust/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/getting-started-with-rust/"/>
+        <id>https://www.redwood9.com/getting-started-with-rust/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/getting-started-with-rust/">&lt;p&gt;最近在组内给大家做的Rust分享, 对Rust编程语言一些典型的特色机制进行介绍&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/getting-started-with-rust/">&lt;p&gt;最近在组内给大家做的Rust分享, 对Rust编程语言一些典型的特色机制进行介绍&lt;&#x2F;p&gt;
 &lt;iframe src=&quot;https:&#x2F;&#x2F;www.slideshare.net&#x2F;slideshow&#x2F;embed_code&#x2F;key&#x2F;q6fm6ymAv4zn16?hostedIn=slideshare&amp;page=upload&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;iframe&gt;
 </content>
         
@@ -41,10 +41,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/stackless-coroutines/"/>
-        <id>https://mabuya.vercel.app/stackless-coroutines/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/stackless-coroutines/"/>
+        <id>https://www.redwood9.com/stackless-coroutines/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/stackless-coroutines/">&lt;p&gt;上次做了有栈协程的实现细节实现，但实际上还有很多库，使用的是无栈协程方案，比如rust. 从完备性的角度，也整理了无栈协程的原理以及实现细节&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/stackless-coroutines/">&lt;p&gt;上次做了有栈协程的实现细节实现，但实际上还有很多库，使用的是无栈协程方案，比如rust. 从完备性的角度，也整理了无栈协程的原理以及实现细节&lt;&#x2F;p&gt;
 &lt;iframe src=&quot;https:&#x2F;&#x2F;www.slideshare.net&#x2F;slideshow&#x2F;embed_code&#x2F;key&#x2F;umIycsY8UlDudy?hostedIn=slideshare&amp;page=upload&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</content>
         
     </entry>
@@ -61,10 +61,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/stackful-coroutines/"/>
-        <id>https://mabuya.vercel.app/stackful-coroutines/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/stackful-coroutines/"/>
+        <id>https://www.redwood9.com/stackful-coroutines/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/stackful-coroutines/">&lt;p&gt;近期在组内做了有栈协程相关的分享, 如果你也感兴趣, 可以参考&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/stackful-coroutines/">&lt;p&gt;近期在组内做了有栈协程相关的分享, 如果你也感兴趣, 可以参考&lt;&#x2F;p&gt;
 &lt;iframe src=&quot;https:&#x2F;&#x2F;www.slideshare.net&#x2F;slideshow&#x2F;embed_code&#x2F;key&#x2F;iG40Mz039mcJzP?hostedIn=slideshare&amp;page=upload&quot; width=&quot;776&quot; height=&quot;500&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</content>
         
     </entry>
@@ -81,10 +81,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/build-fast-expression-evaluation/"/>
-        <id>https://mabuya.vercel.app/build-fast-expression-evaluation/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/build-fast-expression-evaluation/"/>
+        <id>https://www.redwood9.com/build-fast-expression-evaluation/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/build-fast-expression-evaluation/">&lt;p&gt;在编码过程中, 常会遇到一大类场景, 比如为特定的用户发送奖品. 最简单的实现方式就是把判定规则写在代码中. 但现实是复杂的,稍微扩展一下,就会发现这种方式是难以为继的,比如:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/build-fast-expression-evaluation/">&lt;p&gt;在编码过程中, 常会遇到一大类场景, 比如为特定的用户发送奖品. 最简单的实现方式就是把判定规则写在代码中. 但现实是复杂的,稍微扩展一下,就会发现这种方式是难以为继的,比如:&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;运营希望能灵活的修改和增加规则&lt;&#x2F;li&gt;
 &lt;li&gt;希望不同规则之间能指定顺序&lt;&#x2F;li&gt;
@@ -121,10 +121,10 @@ DSL -&amp;gt; Action
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/comparison-of-password-management-software/"/>
-        <id>https://mabuya.vercel.app/comparison-of-password-management-software/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/comparison-of-password-management-software/"/>
+        <id>https://www.redwood9.com/comparison-of-password-management-software/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/comparison-of-password-management-software/">&lt;h1 id=&quot;yuan-qi&quot;&gt;缘起&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://www.redwood9.com/comparison-of-password-management-software/">&lt;h1 id=&quot;yuan-qi&quot;&gt;缘起&lt;&#x2F;h1&gt;
 &lt;p&gt;以前就一直有听说1password等密码管理工具，但感觉把密码交给别人管理终归不放心，所以一直都是把密码记在大脑中，但发现在几类场景下存在不便：&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -178,10 +178,10 @@ IOS 19条内免费，去掉限制68元搞定。
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/cpp-abi/"/>
-        <id>https://mabuya.vercel.app/cpp-abi/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/cpp-abi/"/>
+        <id>https://www.redwood9.com/cpp-abi/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/cpp-abi/">&lt;p&gt;近期在组内做了一个C++ ABI以及二进制兼容性的培训,如果你想了解下面的知识,可以参考&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/cpp-abi/">&lt;p&gt;近期在组内做了一个C++ ABI以及二进制兼容性的培训,如果你想了解下面的知识,可以参考&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;为什么Linux(x86)生成的二进制执行程序不能在windows下执行，能直接在arm上执行吗，能直接在unix上执行吗？&lt;&#x2F;li&gt;
 &lt;li&gt;ABI跟体系结构、操作系统、编译器的关系？&lt;&#x2F;li&gt;
@@ -205,10 +205,10 @@ IOS 19条内免费，去掉限制68元搞定。
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/geben-xdebug-emacs-php/"/>
-        <id>https://mabuya.vercel.app/geben-xdebug-emacs-php/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/geben-xdebug-emacs-php/"/>
+        <id>https://www.redwood9.com/geben-xdebug-emacs-php/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/geben-xdebug-emacs-php/">&lt;p&gt;一直都是用var-dump, echo, die 输出变量来调试php，终于有一天，无法忍受这种低效且不专业的调试方式，经过一番研究，发现在emacs里面，Geben是一个不错的选择&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/geben-xdebug-emacs-php/">&lt;p&gt;一直都是用var-dump, echo, die 输出变量来调试php，终于有一天，无法忍受这种低效且不专业的调试方式，经过一番研究，发现在emacs里面，Geben是一个不错的选择&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;gebende-an-zhuang&quot;&gt;geben的安装&lt;&#x2F;h2&gt;
 &lt;p&gt;下载geben
 cd geben-0.26&#x2F;
@@ -262,8 +262,8 @@ http:&#x2F;&#x2F;www.example.com&#x2F;test.php?XDEBUG_SESSION_START=1&lt;&#x2F;p
 &lt;&#x2F;span&gt;&lt;span&gt;q       stop
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mabuya.vercel.app&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;geben-on-emacs&quot;&gt;geben&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mabuya.vercel.app&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;www.xdebug.org&#x2F;&quot;&gt;xdebug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.redwood9.com&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;geben-on-emacs&quot;&gt;geben&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.redwood9.com&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;www.xdebug.org&#x2F;&quot;&gt;xdebug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;txt.png&quot; alt=&quot;在emacs中整体的效果图&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
         
@@ -281,10 +281,10 @@ http:&#x2F;&#x2F;www.example.com&#x2F;test.php?XDEBUG_SESSION_START=1&lt;&#x2F;p
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/php-mode-introduce/"/>
-        <id>https://mabuya.vercel.app/php-mode-introduce/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/php-mode-introduce/"/>
+        <id>https://www.redwood9.com/php-mode-introduce/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/php-mode-introduce/">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://www.redwood9.com/php-mode-introduce/">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
 &lt;p&gt;在Emacs中，php mode是一个编辑php源码主要的模式。扩展自Emacs的C模式，他继承了所有C模式的导航和编辑功能。语法着色依照php 3,4,5的版本。默认情况下，缩写规则遵循PHP PEAR代码规范。另外PHP中的开发助手包含的文档检索自PHP manual，用来完成代码完成和class browser.
 可以用M-x php-mode-version来确定PHP mode的版本
 PHP mode是Turadg Aleahmad在1999年首次写成的。&lt;&#x2F;p&gt;
@@ -336,10 +336,10 @@ M-x imenu-add-menubar-index
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/ictcals-2009-linux-crack/"/>
-        <id>https://mabuya.vercel.app/ictcals-2009-linux-crack/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/ictcals-2009-linux-crack/"/>
+        <id>https://www.redwood9.com/ictcals-2009-linux-crack/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/ictcals-2009-linux-crack/">&lt;p&gt;中科院分词Linux版破解过程
+        <content type="html" xml:base="https://www.redwood9.com/ictcals-2009-linux-crack/">&lt;p&gt;中科院分词Linux版破解过程
 1，ar -x libICTCLAS30.a 拆分成对象文件&lt;&#x2F;p&gt;
 &lt;p&gt;2，将生成的ICTCLAS30.o用IDA打开
 &lt;a href=&quot;&#x2F;assets&#x2F;0.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-10&quot; title=&quot;ictclas-2009-ida&quot; src=&quot;&#x2F;assets&#x2F;0.png&quot; alt=&quot;ictclas 2009 IDA 破解&quot; width=&quot;435&quot; height=&quot;30&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -364,10 +364,10 @@ M-x imenu-add-menubar-index
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/thinking-about-emacs/"/>
-        <id>https://mabuya.vercel.app/thinking-about-emacs/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/thinking-about-emacs/"/>
+        <id>https://www.redwood9.com/thinking-about-emacs/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/thinking-about-emacs/">&lt;p&gt;最近一直在研究EMACS，用了一段时间，还是觉得很模糊，今天，又看了一些资料，觉得有些眉目，特记录于此。&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://www.redwood9.com/thinking-about-emacs/">&lt;p&gt;最近一直在研究EMACS，用了一段时间，还是觉得很模糊，今天，又看了一些资料，觉得有些眉目，特记录于此。&lt;&#x2F;p&gt;
 &lt;p&gt;1，在我的机器上emacs安装地址为：&#x2F;usr&#x2F;share&#x2F;emacs&#x2F;22.1&lt;&#x2F;p&gt;
 &lt;p&gt;2，在emacs安装目录下有：site-list&#x2F;subdirs.el ,这个文件保存所有用户启动emacs时做的操作。&lt;&#x2F;p&gt;
 &lt;p&gt;3，~&#x2F;.emacs保存当前用户的emacs设置&lt;&#x2F;p&gt;

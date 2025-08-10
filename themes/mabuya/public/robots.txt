@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://mabuya.vercel.app/sitemap.xml
+Sitemap: https://www.redwood9.com/sitemap.xml

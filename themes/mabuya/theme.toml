@@ -1,7 +1,7 @@
 name = "运指如飞"
 description = "〠 A minimal Zola theme for building light and SEO-ready blogs."
 license = "MIT"
-homepage = "https://github.com/semanticdata/mabuya"
+homepage = "https://github.com/redwood9"
 min_version = "0.18.0"
 demo = "https://mabuya.vercel.app/"
 

@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>运指如飞 - Life</title>
     <subtitle>〠 一个古董程序员的琐碎记事.</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://mabuya.vercel.app/tags/life/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/"/>
+    <link rel="self" type="application/atom+xml" href="https://www.redwood9.com/tags/life/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.redwood9.com/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2016-10-01T00:00:00+00:00</updated>
-    <id>https://mabuya.vercel.app/tags/life/atom.xml</id>
+    <id>https://www.redwood9.com/tags/life/atom.xml</id>
     <entry xml:lang="en">
         <title>密码管理软件比较</title>
         <published>2016-10-01T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://mabuya.vercel.app/comparison-of-password-management-software/"/>
-        <id>https://mabuya.vercel.app/comparison-of-password-management-software/</id>
+        <link rel="alternate" type="text/html" href="https://www.redwood9.com/comparison-of-password-management-software/"/>
+        <id>https://www.redwood9.com/comparison-of-password-management-software/</id>
         
-        <content type="html" xml:base="https://mabuya.vercel.app/comparison-of-password-management-software/">&lt;h1 id=&quot;yuan-qi&quot;&gt;缘起&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://www.redwood9.com/comparison-of-password-management-software/">&lt;h1 id=&quot;yuan-qi&quot;&gt;缘起&lt;&#x2F;h1&gt;
 &lt;p&gt;以前就一直有听说1password等密码管理工具，但感觉把密码交给别人管理终归不放心，所以一直都是把密码记在大脑中，但发现在几类场景下存在不便：&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;

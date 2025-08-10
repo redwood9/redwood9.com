@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>运指如飞 - Code</title>
+      <link>https://mabuya.vercel.app/</link>
+      <description>〠 一个古董程序员的琐碎记事.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://mabuya.vercel.app/tags/code/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>编写一个极速的规则表达式</title>
+          <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/build-fast-expression-evaluation/</link>
+          <guid>https://mabuya.vercel.app/build-fast-expression-evaluation/</guid>
+          <description xml:base="https://mabuya.vercel.app/build-fast-expression-evaluation/">&lt;p&gt;在编码过程中, 常会遇到一大类场景, 比如为特定的用户发送奖品. 最简单的实现方式就是把判定规则写在代码中. 但现实是复杂的,稍微扩展一下,就会发现这种方式是难以为继的,比如:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;运营希望能灵活的修改和增加规则&lt;&#x2F;li&gt;
+&lt;li&gt;希望不同规则之间能指定顺序&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;这会导致不断地写新代码,测试,发布,整体效率很低,并且每次响应需求都可能引入新的bug.&lt;&#x2F;p&gt;
+&lt;p&gt;类似的场景还有很多, 为了让我们得工作变得轻松, 必然希望通过某种抽象来一劳永逸的解决问题.&lt;&#x2F;p&gt;
+&lt;p&gt;而实际上, 我一直都认为: DSL是一种设计模式
+而把范围集合用DSL描述,可以解决所有需要范围集合判定以及优先级判定的问题&lt;&#x2F;p&gt;
+&lt;p&gt;在这个规则发奖的场景,实际上就是
+DSL -&amp;gt; Action
+比如:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;quot;(ip&amp;gt;&amp;#39;1.2.3.4&amp;#39; and ip&amp;lt;&amp;#39;4.5.6.7&amp;#39;) or level&amp;gt;100&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; -&amp;gt; Reward
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;在这其中&lt;&#x2F;p&gt;
+&lt;p&gt;“(ip&amp;gt;‘1.2.3.4’ and ip&amp;lt;‘4.5.6.7’) or level&amp;gt;100”&lt;&#x2F;p&gt;
+&lt;p&gt;就是一个表达式. 可以用一些现成的词语法工具来得到一个解析器.&lt;&#x2F;p&gt;
+&lt;p&gt;但好在这种表达式结构比较简单, 我们不用按照常规词法\语法\语义按部就班的实现, 在一个循环就可以完成词语法解析,从而加快效率&lt;&#x2F;p&gt;
+&lt;p&gt;更有意思的是, 我们可以通过逐步压测分析组件的性能瓶颈, 一步步的优化. 通过一系列的优化, 成功讲单核性能,从60000qps提升到200000qps,多核可线性扩展&lt;&#x2F;p&gt;
+&lt;p&gt;代码我放在Github:&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;redwood9&#x2F;faster_expression_evaluation&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>C++ ABI和二进制兼容性</title>
+          <pubDate>Mon, 23 Aug 2010 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/cpp-abi/</link>
+          <guid>https://mabuya.vercel.app/cpp-abi/</guid>
+          <description xml:base="https://mabuya.vercel.app/cpp-abi/">&lt;p&gt;近期在组内做了一个C++ ABI以及二进制兼容性的培训,如果你想了解下面的知识,可以参考&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;为什么Linux(x86)生成的二进制执行程序不能在windows下执行，能直接在arm上执行吗，能直接在unix上执行吗？&lt;&#x2F;li&gt;
+&lt;li&gt;ABI跟体系结构、操作系统、编译器的关系？&lt;&#x2F;li&gt;
+&lt;li&gt;不同编译器在同操作系统同体系结构编出来的SO能相容吗？&lt;&#x2F;li&gt;
+&lt;li&gt;跨SO传输会有哪些问题，原理是什么？&lt;&#x2F;li&gt;
+&lt;li&gt;安全跨SO传输的方案是什么？&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;www.slideshare.net&#x2F;slideshow&#x2F;embed_code&#x2F;key&#x2F;ptjUBsYgM3JKO7?hostedIn=slideshare&amp;page=upload&quot; width=&quot;100%&quot; height=&quot;500&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</description>
+      </item>
+      <item>
+          <title>Geben + Xdebug + Emacs 调试php</title>
+          <pubDate>Mon, 23 Aug 2010 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/geben-xdebug-emacs-php/</link>
+          <guid>https://mabuya.vercel.app/geben-xdebug-emacs-php/</guid>
+          <description xml:base="https://mabuya.vercel.app/geben-xdebug-emacs-php/">&lt;p&gt;一直都是用var-dump, echo, die 输出变量来调试php，终于有一天，无法忍受这种低效且不专业的调试方式，经过一番研究，发现在emacs里面，Geben是一个不错的选择&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gebende-an-zhuang&quot;&gt;geben的安装&lt;&#x2F;h2&gt;
+&lt;p&gt;下载geben
+cd geben-0.26&#x2F;
+make
+Copy `dbgp.elc&#x27;, `geben.elc&#x27; 和 `tree-widget&#x27; 目录到emacs load path下&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;xdebugde-an-zhuang&quot;&gt;xdebug的安装&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;wget http:&#x2F;&#x2F;www.xdebug.org&#x2F;files&#x2F;xdebug-2.1.0.tgz
+&lt;&#x2F;span&gt;&lt;span&gt;tar xvfz xdebug-2.1.0.tgz
+&lt;&#x2F;span&gt;&lt;span&gt;cd xdebug-2.1.0.tgz
+&lt;&#x2F;span&gt;&lt;span&gt;phpize
+&lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;configure --enable-xdebug
+&lt;&#x2F;span&gt;&lt;span&gt;make&lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;;&lt;&#x2F;span&gt;&lt;span&gt;make install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;xiu-gai-php-ini-zeng-jia&quot;&gt;修改php.ini 增加&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span&gt;zend_extension_ts=&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;&amp;quot;&#x2F;wherever&#x2F;you&#x2F;put&#x2F;it&#x2F;xdebug.so&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;zend_extension=&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;&amp;quot;&#x2F;wherever&#x2F;you&#x2F;put&#x2F;it&#x2F;xdebug.so&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;php-inizeng-jia-xdebugpei-zhi-nei-rong&quot;&gt;php.ini增加xdebug配置内容：&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span&gt;xdebug.remote_enable = On
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;shi-yong-fang-shi&quot;&gt;使用方式&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;.emacs 中加入&lt;&#x2F;strong&gt;：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span&gt;(autoload &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d69d85;&quot;&gt;&amp;#39;geben &amp;quot;geben&amp;quot; &amp;quot;PHP Debugger on Emacs&amp;quot; t)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;启动emacs&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;M-x geben&lt;&#x2F;p&gt;
+&lt;p&gt;直接访问一个php页，如果设置了手工触发，则需要增加url参数，类似于：
+http:&#x2F;&#x2F;www.example.com&#x2F;test.php?XDEBUG_SESSION_START=1&lt;&#x2F;p&gt;
+&lt;p&gt;如果是命令行调试，则&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span&gt;XDEBUG_CONFIG=&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#282828;color:#d69d85;&quot;&gt;&amp;quot;idekey=session_name&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#569cd6;&quot;&gt;;&lt;&#x2F;span&gt;&lt;span&gt;php myscript.php
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;geben-mode-xia-kuai-jie-jian&quot;&gt;geben mode 下快捷键&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;Bash&quot; style=&quot;background-color:#1e1e1e;color:#dcdcdc;&quot; class=&quot;language-Bash &quot;&gt;&lt;code class=&quot;language-Bash&quot; data-lang=&quot;Bash&quot;&gt;&lt;span&gt;spc     step into&#x2F;step over
+&lt;&#x2F;span&gt;&lt;span&gt;i       step into
+&lt;&#x2F;span&gt;&lt;span&gt;o       step over
+&lt;&#x2F;span&gt;&lt;span&gt;r       step out
+&lt;&#x2F;span&gt;&lt;span&gt;g       run
+&lt;&#x2F;span&gt;&lt;span&gt;c       run to cursor
+&lt;&#x2F;span&gt;&lt;span&gt;b       set a breakpoint at a line
+&lt;&#x2F;span&gt;&lt;span&gt;B       set a breakpoint interactively
+&lt;&#x2F;span&gt;&lt;span&gt;u       unset a breakpoint at a line
+&lt;&#x2F;span&gt;&lt;span&gt;U       clear all breakpoints
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e3bbab;&quot;&gt;\C&lt;&#x2F;span&gt;&lt;span&gt;-c b  display breakpoint list
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;       set redirection mode
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e3bbab;&quot;&gt;\C&lt;&#x2F;span&gt;&lt;span&gt;-u t  change redirection mode
+&lt;&#x2F;span&gt;&lt;span&gt;d       display backtrace
+&lt;&#x2F;span&gt;&lt;span&gt;t       display backtrace
+&lt;&#x2F;span&gt;&lt;span&gt;v       display context variables
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e3bbab;&quot;&gt;\C&lt;&#x2F;span&gt;&lt;span&gt;-c f  visit script file
+&lt;&#x2F;span&gt;&lt;span&gt;w       where
+&lt;&#x2F;span&gt;&lt;span&gt;q       stop
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mabuya.vercel.app&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;geben-on-emacs&quot;&gt;geben&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mabuya.vercel.app&#x2F;geben-xdebug-emacs-php&#x2F;%22http:&#x2F;&#x2F;www.xdebug.org&#x2F;&quot;&gt;xdebug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;txt.png&quot; alt=&quot;在emacs中整体的效果图&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>php-mode 介绍</title>
+          <pubDate>Wed, 07 Apr 2010 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/php-mode-introduce/</link>
+          <guid>https://mabuya.vercel.app/php-mode-introduce/</guid>
+          <description xml:base="https://mabuya.vercel.app/php-mode-introduce/">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;在Emacs中，php mode是一个编辑php源码主要的模式。扩展自Emacs的C模式，他继承了所有C模式的导航和编辑功能。语法着色依照php 3,4,5的版本。默认情况下，缩写规则遵循PHP PEAR代码规范。另外PHP中的开发助手包含的文档检索自PHP manual，用来完成代码完成和class browser.
+可以用M-x php-mode-version来确定PHP mode的版本
+PHP mode是Turadg Aleahmad在1999年首次写成的。&lt;&#x2F;p&gt;
+&lt;p&gt;这篇文档适合老练的EMACS用户特别是熟知Emacs manual.他们也需要知道怎么使用php来编写程序，本文不包含如何使用Php编程的相关知识。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;electricity&quot;&gt;Electricity&lt;&#x2F;h2&gt;
+&lt;p&gt;在emacs中输入某些特殊字符会有特殊作用。比如：敲入TAB (or C-i)会使某行到正确的列上（正确的符合语法缩进）。
+如果这些特殊字符的效果不适你需要的，则在敲入特殊字符之前敲入C-q.比如：C-q TAB敲入一个真实的tab。C-c C-l是禁用electric效果，在按一次则取消&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dong-zuo&quot;&gt;动作&lt;&#x2F;h2&gt;
+&lt;p&gt;在Emacs和C mode的传统惯例在php mode中得以保留。下列命令值得注意：
+C-M-f    前向跳跃（按语法单位），如果是字符串，则跳到字符串末尾。如果光标在花括号中，则跳到花括号末尾。如果光标在声明块中，则跳到块末尾。
+C-M-b 类似C-M-f，不过是后向跳
+C-M-a 跳到最顶级的函数定义的开头
+C-M-e 跳到最顶级的函数定义的结尾
+C-M-&lt;HOME&gt; 跳到当前函数的开头
+C-M-&lt;END&gt; 跳到当前函数的结尾
+M-m 移动到当前行的开头（考虑空白符）&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;suo-jin&quot;&gt;缩进&lt;&#x2F;h2&gt;
+&lt;p&gt;.emacs中的设置
+php-mode-force-pear 在所有打开的php文件使用php pear索引规则
+c-basic-offset 在c模式中一个级别的语法单位缩进的列数，在php mode中默认是4个空格（c mode也一样）
+indent-tabs-mode  tab是按照制表符缩进还是若干字符的空格缩进，php mode默认设为nil
+C-c C-q 把当前光标所在的最顶级的语法单元缩进（类或函数）&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bian-ji&quot;&gt;编辑&lt;&#x2F;h2&gt;
+&lt;p&gt;M-q 用fill-column指定的值填充段落。这个命令能在格式化代码和php注释中包含docblock注释时正确工作
+C-u n C-x f 设置fill-column的值用于M-q 命令(fill-paragraph)
+C-M-h 全选当前最高语法块（比如整个类），通常你可以用C-w or M-w来删除选定区域或者C-M-\ or C-x TAB来格式化选定区域
+M-x mark-defun 类似C-M-h，只是C-M-h选中top-level语法块，而mark-defun是选定当前语法块（比如类中的一个函数）&lt;&#x2F;p&gt;
+&lt;p&gt;传统的emacs中的压缩选定区域命令在Php mode被支持。下列命令是值得注意的&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;indexcai-dan&quot;&gt;Index菜单&lt;&#x2F;h2&gt;
+&lt;p&gt;php mode提供了当前函数和类定义的显示列表。这个菜单很简单，但是很有效。要想使它工作，则敲入命令：
+M-x imenu-add-menubar-index
+这个命令会扫描文件并增加一个菜单项Index,点击开可跳转到相关定义&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bei-zhu&quot;&gt;备注&lt;&#x2F;h2&gt;
+&lt;p&gt;附图：我的php-mode
+[imgShow:&lt;img src=&quot;&#x2F;assets&#x2F;php-mode.png&quot; border=&quot;0&quot; alt=&quot;skag&quot; width=&quot;560&quot; &#x2F;&gt;]&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ictcals 2009 Linux版破解过程</title>
+          <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/ictcals-2009-linux-crack/</link>
+          <guid>https://mabuya.vercel.app/ictcals-2009-linux-crack/</guid>
+          <description xml:base="https://mabuya.vercel.app/ictcals-2009-linux-crack/">&lt;p&gt;中科院分词Linux版破解过程
+1，ar -x libICTCLAS30.a 拆分成对象文件&lt;&#x2F;p&gt;
+&lt;p&gt;2，将生成的ICTCLAS30.o用IDA打开
+&lt;a href=&quot;&#x2F;assets&#x2F;0.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-10&quot; title=&quot;ictclas-2009-ida&quot; src=&quot;&#x2F;assets&#x2F;0.png&quot; alt=&quot;ictclas 2009 IDA 破解&quot; width=&quot;435&quot; height=&quot;30&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;3，上面的地方是关键
+69B处的机器码是7665，不高于跳转；改成71 ，不溢出跳转&lt;&#x2F;p&gt;
+&lt;p&gt;4，ar -r  libICTCLAS30.a  ICTCLAS30.o
+将生成的ICTCLAS30.o替换进静态库&lt;&#x2F;p&gt;
+&lt;p&gt;重新编译程序，时间调整到2010年，运行成功！&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>近期关于emacs的一些心得</title>
+          <pubDate>Fri, 28 Sep 2007 00:00:00 +0000</pubDate>
+          <author>Arvin</author>
+          <link>https://mabuya.vercel.app/thinking-about-emacs/</link>
+          <guid>https://mabuya.vercel.app/thinking-about-emacs/</guid>
+          <description xml:base="https://mabuya.vercel.app/thinking-about-emacs/">&lt;p&gt;最近一直在研究EMACS，用了一段时间，还是觉得很模糊，今天，又看了一些资料，觉得有些眉目，特记录于此。&lt;&#x2F;p&gt;
+&lt;p&gt;1，在我的机器上emacs安装地址为：&#x2F;usr&#x2F;share&#x2F;emacs&#x2F;22.1&lt;&#x2F;p&gt;
+&lt;p&gt;2，在emacs安装目录下有：site-list&#x2F;subdirs.el ,这个文件保存所有用户启动emacs时做的操作。&lt;&#x2F;p&gt;
+&lt;p&gt;3，~&#x2F;.emacs保存当前用户的emacs设置&lt;&#x2F;p&gt;
+&lt;p&gt;4，如果要安装新的插件，比如speedbar，可以把speedbar代码直接放在一个目录
+下， 比如&#x2F;usr&#x2F;share&#x2F;emacs&#x2F;speedbar。在subdirs.el 中加入
+(add-to-list ’load-path “&#x2F;usr&#x2F;share&#x2F;emacs&#x2F;21.3&#x2F;speedbar”)
+(autoload ’speedbar-frame-mode “speedbar” “Popup a speedbar frame” t)
+(autoload ’speedbar-get-focus “speedbar” “Jump to speedbar frame” t)
+(global-set-key [(f4)] ’speedbar-get-focus)
+就可以了&lt;&#x2F;p&gt;
+&lt;p&gt;5，安装ecb的时候，总是提示安装不成功，提示找不到cl，后来在emacs-22.1\lisp\emacs-lisp中找到，所以在subdirs.el 中加入(add-to-list ’load-path “&#x2F;usr&#x2F;share&#x2F;emacs&#x2F;21.3&#x2F;emacs-lisp”)，加入后重启emacs根据提示，做相应修改，成功。&lt;&#x2F;p&gt;
+&lt;p&gt;6，使用中发现在windows下使用emacs时候，如果直接把配置脚本写在subdirs.el，那么只要脚本加载过程出错，就不能启动emacs。如果想知道.emacs究竟放在哪里，可以选择options-&amp;gt;customize emacs-&amp;gt;saved options，在minibuf中会看到.emacs的位置。把配置文件写入.emacs,出错会有提示。我本机的.emacs地址为
+C:\Documents and Settings\Administrator\Application Data.emacs 。&lt;&#x2F;p&gt;
+&lt;p&gt;7，emacs主题
+(load-file “F:&#x2F;soft&#x2F;emacs-22.1&#x2F;lisp&#x2F;color_theme&#x2F;color-theme.el”)
+(require ’color-theme)
+(color-theme-dark-blue)&lt;&#x2F;p&gt;
+&lt;p&gt;8，emacs缩进
+(setq c-basic-offset 4) 缩进4字符&lt;&#x2F;p&gt;
+&lt;p&gt;至此，理清了emacs的配置思路，总算是能使用了。&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
